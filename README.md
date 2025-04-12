@@ -1,16 +1,8 @@
 # World Geo Data
 
-Simplified geographical data for 172 countries in lightweight formats:
+Simplified country shapes GeoJSON and geographical data for 173 countries in lightweight formats:
 - TypeScript (`countries.ts`): 241 KB
 - JSON (`countries.json`): 248 KB
-
-## Data Source
-
-Original data from [world.geo.json](https://github.com/johan/world.geo.json) with these modifications:
-
-   - Converted from 3-letter to 2-letter country codes (ISO 3166-1 alpha-2)
-   - Added capital city names and coordinates
-   - Included continent information
 
 ## Data Structure
 
@@ -46,3 +38,11 @@ export type MultiPolygon = {
   coordinates: number[][][][];
 };
 ```
+
+## Data Source
+
+Original data from [world.geo.json](https://github.com/johan/world.geo.json) with these modifications:
+
+   - Converted from 3-letter to 2-letter country codes (ISO 3166-1 alpha-2)
+   - Added capital city names and coordinates
+   - Included continent information
